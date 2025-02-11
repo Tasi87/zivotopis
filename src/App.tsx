@@ -1,28 +1,17 @@
 import React from 'react';
 
 // styles
+import './App.css'
 
 // components
-import TheNavigation from './components/TheNavigation'
+import Sidebar from './components/Sidebar';
+import MainContent from './components/MainContent'
 
-// views
-
-
-
-function App() {
+const App: React.FC = () => {
   return (
-    <div>
-		<header>
-			<TheNavigation />
-		</header>
-
-		<main>
-			<h1>Tahssain Amir</h1>
-		</main>
-
-		<footer>
-
-		</footer>
+    <div className='container'>
+		<Sidebar />
+		<MainContent />
     </div>
   );
 }
